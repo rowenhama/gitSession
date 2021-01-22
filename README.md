@@ -26,11 +26,13 @@ CODING WORKFLOW
     -> Never commit to Master or make a Pull Request without express permission from project lead
     
     -> Make all your branches from the staging branch and only make a Pull Request when you are satisfied with 
-       your own working branchCommit code to your working branch every 30 mins or at logical points whichever comes 
+       your own working branch
+       
+    -> Commit code to your working branch every 30 mins or at logical points whichever comes 
        first
       
-    -> Before making a PR to Staging Branch, pull in any changes from Staging into your working branch and resolve 
-       conflicts if any
+    -> Before making a PR to Staging Branch, pull in any changes from Staging into your working branch and
+       resolve conflicts if any
 
 CODING STYLE
 
