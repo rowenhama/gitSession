@@ -1,5 +1,5 @@
 # gitSession
-how to use GitHub
+how to use GitHub - RESTFULL API WITH THE POSTGREL DATABASE
 
 
 Clone the Master branch to your dev machine and setup your IDE and Python Environments
