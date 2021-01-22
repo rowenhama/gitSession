@@ -1,0 +1,12 @@
+django
+django-cascading-dropdown-widget
+django-countries
+django-cors-headers
+django-suit
+django-custom-field
+djangorestframework
+djangorestframework-simplejwt
+drf-yasg
+psycopg2
+python-decouple
+six
