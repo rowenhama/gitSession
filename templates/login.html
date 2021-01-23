@@ -1,0 +1,23 @@
+{% block content %}
+{% load static %}
+{% if title %}
+    <title>GRM Fundraising | LOGIN-{{ title }}</title>
+    {% else %}
+    <title>GRM Fundraising | LOGIN</title>
+    {% endif %}
+ <link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
+<div class="content-section" align="center">
+    <form method="post" action="{% url 'kasiraiLogin:login' %}">
+        {% csrf_token %}
+        <input type="text" name="username" id="button" placeholder="Username"><br>
+
+        <br><input type="password" name="password" id="button" placeholder="Enter PASSWORD"><br><br>
+        <input type="submit" value="LOGIN" id="butt"><br>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Need an account?<a class="ml-2" href="{% url 'kasiraiLogin:register' %}">Sign Up Now</a>
+            </small>
+        </div>
+    </form>
+</div>
+{% endblock content%}       
