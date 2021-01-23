@@ -1,0 +1,33 @@
+{% block content %}
+{% load static %}
+{% if title %}
+<title>GRM | SIGNUP-{{ title }}</title>
+{% else %}
+<title>GRM | SIGNUP</title>
+{% endif %}
+ <link rel="stylesheet" href="{% static 'register.css' %}">
+<div class="content-section" align="center">
+    <form id="registration" method="POST" action="{% url 'kasiraiLogin:register' %}">
+        {% csrf_token %}
+        {% if text%}
+        <p style="color:{{color}}">{{text}}</p>
+        {%endif%}
+        <legend class="borde-bottom mb-4">Join Today</legend>
+
+        <input type="text" name="username" id="button" placeholder="Username"><br><br>
+        <input type="text" name="fullname" id="button" placeholder="Enter Fullname"><br><br>
+        <input type="date" name="date_of_birth" id="button" placeholder="Date of Birth"><br><br>
+        <input type="email" name="email" id="button" placeholder="Enter Your Email Address"><br><br>
+        <input type="password" name="password" id="button" placeholder="Enter PASSWORD"><br><br>
+        <input type="password" name="confirm_password" id="button"
+                                               placeholder="CONFIRM PASSWORD"><br><br>
+        <input type="submit" value="REGISTER" id="butt">
+        <div class="border-top pt-3">
+        <small class="text-muted" id="kas">
+            Already have an account?<a class="ml-2" href="{% url 'kasiraiLogin:login' %}">LOGIN</a>
+        </small>
+    </div>
+    </form>
+
+</div>
+{% endblock content%}       
